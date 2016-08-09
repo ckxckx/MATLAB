@@ -1,0 +1,13 @@
+clear;
+clc;
+x=linspace(-2,2,21);
+y=linspace(-3,3,31);
+z=linspace(-4,4,41);
+[X,Y,Z]=meshgrid(x,y,z);
+V=sin(X.^2+Y.^2+Z.^2);
+contourslice(X,Y,Z,V,0,0,0)
+colormap(gray)
+colorbar('location','eastoutside')
+name='vvvvvvvv'
+title(name)
+view(1)
